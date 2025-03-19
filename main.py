@@ -10,10 +10,10 @@ import requests
 # Add this at the top of the file
 VERIFICATION_REQUIRED = os.getenv('VERIFICATION_REQUIRED', 'true').lower() == 'true'
 
-admin_ids = [6025969005, 6018060368]
+admin_ids = [5821871362, 6018060368]
 
 # MongoDB connection
-MONGO_URI = os.getenv('MONGO_URI')  # Get MongoDB URI from environment variables
+MONGO_URI = os.getenv('mongodb+srv://sankar:sankar@sankar.lldcdsx.mongodb.net/?retryWrites=true&w=majority')  # Get MongoDB URI from environment variables
 client = MongoClient(MONGO_URI)
 db = client['terabox_bot']
 users_collection = db['users']
@@ -26,8 +26,8 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # Get the bot token and channel ID from environment variables
-TOKEN = os.getenv('BOT_TOKEN')
-CHANNEL_ID = os.getenv('CHANNEL_ID')
+TOKEN = os.getenv('6662329787:AAHUuH45cuvNfBj_pzd5LO5Q8N50N3h5lCw')
+CHANNEL_ID = os.getenv('-1001870015374')
 WEBHOOK = os.getenv('organisational-miriam-lokesh3-f360a701.koyeb.app')
 
 # Define the /start command handler
