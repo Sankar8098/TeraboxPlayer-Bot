@@ -28,7 +28,7 @@ logger = logging.getLogger(__name__)
 # Get the bot token and channel ID from environment variables
 TOKEN = os.getenv('6662329787:AAHUuH45cuvNfBj_pzd5LO5Q8N50N3h5lCw')
 CHANNEL_ID = os.getenv('-1001870015374')
-WEBHOOK = os.getenv('organisational-miriam-lokesh3-f360a701.koyeb.app')
+WEBHOOK = os.getenv('WEBHOOK')
 
 # Define the /start command handler
 async def start(update: Update, context: CallbackContext) -> None:
@@ -407,7 +407,7 @@ async def handle_terabox_link(update: Update, context: CallbackContext) -> None:
 def main() -> None:
     # Get the port from the environment variable or use default
     port = int(os.environ.get('PORT', 8080))  # Default to port 8080
-    webhook_url = f"{WEBHOOK}{TOKEN}"  # Replace with your server URL
+    webhook_url = f"{WEBHOOK}{organisational-miriam-lokesh3-f360a701.koyeb.app}"  # Replace with your server URL
 
     # Create the Application and pass it your bot's token
     app = ApplicationBuilder().token(TOKEN).build()
