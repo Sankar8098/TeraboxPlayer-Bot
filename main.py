@@ -28,7 +28,7 @@ logger = logging.getLogger(__name__)
 # Get the bot token and channel ID from environment variables
 TOKEN = os.getenv('BOT_TOKEN')
 CHANNEL_ID = os.getenv('CHANNEL_ID')
-WEBHOOK = os.getenv('WEBHOOK')
+WEBHOOK = os.getenv('organisational-miriam-lokesh3-f360a701.koyeb.app')
 
 # Define the /start command handler
 async def start(update: Update, context: CallbackContext) -> None:
